@@ -4,7 +4,7 @@ A faithful recreation of the official **[NexVerse-IITM](https://www.nexverse-iit
 
 > ⚠️ This is an unofficial student recreation made for learning/interview purposes. All branding, photos and content belong to NexVerse-IITM.
 
-**🔗 Live demo:** *(add your GitHub Pages link here after deploying — see steps below)*
+**🔗 Live demo:** *https://nexverse-iitm.vercel.app/*
 
 ---
 
