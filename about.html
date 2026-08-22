@@ -4,14 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | NexVerse IITM</title>
-  <link rel="icon" type="image/jpeg" href="assets/favicon.png">
+  <meta name="description" content="About NexVerse-IITM — our story, mission and the student community behind IITM Janakpuri's official tech society." />
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="ticker-bar">
+  <div class="ticker-bar" aria-hidden="true">
     <div class="ticker-track">
       <span>▶ ABOUT NEXVERSE-IITM • THE TECH SOCIETY OF IITM JANAKPURI • INNOVATE • CREATE • NEXCEL • ▶ ABOUT NEXVERSE-IITM • THE TECH SOCIETY OF IITM JANAKPURI • INNOVATE • CREATE • NEXCEL •</span>
     </div>
@@ -25,7 +26,7 @@
       <a href="team.html" class="nav-link">TEAM</a>
       <a href="events.html" class="nav-link">EVENTS</a>
     </nav>
-    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
   </header>
 
   <!-- Page Header -->
@@ -88,14 +89,14 @@
     <div class="section-tag">03. BY THE NUMBERS</div>
     <h2 class="section-title">WE MEAN <span class="pink">BUSINESS.</span></h2>
     <div class="num-grid">
-      <div class="num-card"><span class="stat-num pink">500+</span><span class="stat-label">HACKERS HOSTED</span></div>
-      <div class="num-card"><span class="stat-num cyan">20+</span><span class="stat-label">INDUSTRY MENTORS</span></div>
-      <div class="num-card"><span class="stat-num yellow">₹37K</span><span class="stat-label">CASH PRIZES</span></div>
-      <div class="num-card"><span class="stat-num green">15+</span><span class="stat-label">EVENTS &amp; WORKSHOPS</span></div>
+      <div class="num-card"><span class="stat-num pink" data-count="500" data-suffix="+">500+</span><span class="stat-label">HACKERS HOSTED</span></div>
+      <div class="num-card"><span class="stat-num cyan" data-count="20" data-suffix="+">20+</span><span class="stat-label">INDUSTRY MENTORS</span></div>
+      <div class="num-card"><span class="stat-num yellow" data-prefix="₹" data-count="37" data-suffix="K">₹37K</span><span class="stat-label">CASH PRIZES</span></div>
+      <div class="num-card"><span class="stat-num green" data-count="15" data-suffix="+">15+</span><span class="stat-label">EVENTS &amp; WORKSHOPS</span></div>
     </div>
   </section>
 
-  <div class="marquee">
+  <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
       <span>✦ JOIN THE VERSE • ✦ BUILD WITH US • ✦ SHIP FAST • ✦ LEARN LOUDER • ✦ JOIN THE VERSE • ✦ BUILD WITH US • ✦ SHIP FAST • ✦ LEARN LOUDER •</span>
     </div>

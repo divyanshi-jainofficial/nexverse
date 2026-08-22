@@ -4,14 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Events | NexVerse IITM</title>
-  <link rel="icon" type="image/jpeg" href="assets/favicon.png">
+  <meta name="description" content="Events by NexVerse-IITM — NexHack 2.0, our 36-hour national-level AI hackathon, plus past workshops and tech talks." />
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="ticker-bar">
+  <div class="ticker-bar" aria-hidden="true">
     <div class="ticker-track">
       <span>▶ NEXHACK 2.0 • SEP 25-26 • ₹37K PRIZES • 36 HOURS • 500+ HACKERS • ▶ NEXHACK 2.0 • SEP 25-26 • ₹37K PRIZES • 36 HOURS • 500+ HACKERS •</span>
     </div>
@@ -25,7 +26,7 @@
       <a href="team.html" class="nav-link">TEAM</a>
       <a href="events.html" class="nav-link active">EVENTS</a>
     </nav>
-    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
   </header>
 
   <section class="page-hero">
@@ -50,6 +51,17 @@
           <div class="meta-item"><span class="meta-label">DURATION</span><span class="meta-val">36 HOURS</span></div>
           <div class="meta-item"><span class="meta-label">TEAM</span><span class="meta-val">2–5 MEMBERS</span></div>
           <div class="meta-item"><span class="meta-label">PRIZE POOL</span><span class="meta-val">₹37,000</span></div>
+        </div>
+        <!-- FEATURE: Live countdown (engine in js/script.js) -->
+        <div class="countdown" id="countdown" role="timer" aria-label="Countdown to NexHack 2.0">
+          <div class="cd-status" id="cdStatus">⏳ COUNTDOWN TO DAY 1 • SEP 25, 2026</div>
+          <div class="cd-box"><span class="cd-num" id="cdDays">--</span><span class="cd-label">DAYS</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-box"><span class="cd-num" id="cdHours">--</span><span class="cd-label">HRS</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-box"><span class="cd-num" id="cdMins">--</span><span class="cd-label">MIN</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-box"><span class="cd-num" id="cdSecs">--</span><span class="cd-label">SEC</span></div>
         </div>
         <div class="cta-row">
           <a href="#tracks" class="btn btn-primary">VIEW TRACKS ▶</a>
@@ -168,7 +180,28 @@
     </div>
   </section>
 
-  <div class="marquee">
+  <!-- FEATURE: NexHack 1.0 Photo Gallery (lightbox in js/script.js) -->
+  <section class="section" id="gallery">
+    <div class="section-tag">05. PHOTO GALLERY</div>
+    <h2 class="section-title">NEXHACK 1.0 <span class="yellow">REWIND</span></h2>
+    <p class="section-desc">[ A glimpse into the past ] — moments from our first flagship hackathon. Click any photo to view.</p>
+    <div class="gallery-grid">
+      <figure class="gallery-item"><img src="assets/gallery/nexh3.webp" alt="NexHack 1.0 — hackers at work" loading="lazy" /></figure>
+      <figure class="gallery-item"><img src="assets/gallery/nexh4.webp" alt="NexHack 1.0 — team briefing" loading="lazy" /></figure>
+      <figure class="gallery-item"><img src="assets/gallery/nexh5.webp" alt="NexHack 1.0 — late night coding" loading="lazy" /></figure>
+      <figure class="gallery-item"><img src="assets/gallery/nexh6.webp" alt="NexHack 1.0 — mentor session" loading="lazy" /></figure>
+      <figure class="gallery-item"><img src="assets/gallery/nexh9.webp" alt="NexHack 1.0 — building prototypes" loading="lazy" /></figure>
+      <figure class="gallery-item"><img src="assets/gallery/nexh10.webp" alt="NexHack 1.0 — judging round" loading="lazy" /></figure>
+      <figure class="gallery-item"><img src="assets/gallery/nexh12.webp" alt="NexHack 1.0 — participants collaborating" loading="lazy" /></figure>
+      <figure class="gallery-item"><img src="assets/gallery/nexh13.webp" alt="NexHack 1.0 — hackathon floor" loading="lazy" /></figure>
+      <figure class="gallery-item"><img src="assets/gallery/nexh15.webp" alt="NexHack 1.0 — demo prep" loading="lazy" /></figure>
+      <figure class="gallery-item"><img src="assets/gallery/nexh16.webp" alt="NexHack 1.0 — demo day" loading="lazy" /></figure>
+      <figure class="gallery-item"><img src="assets/gallery/nexh17.webp" alt="NexHack 1.0 — prize ceremony" loading="lazy" /></figure>
+      <figure class="gallery-item"><img src="assets/gallery/nexh20.webp" alt="NexHack 1.0 — group photo" loading="lazy" /></figure>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
       <span>✦ BUILD FAST • ✦ SHIP FASTER • ✦ LEARN LOUDER • ✦ JOIN US • ✦ BUILD FAST • ✦ SHIP FASTER • ✦ LEARN LOUDER • ✦ JOIN US •</span>
     </div>

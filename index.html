@@ -4,15 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NexVerse IITM | Innovate. Create. Nexcel.</title>
-  <link rel="icon" type="image/jpeg" href="assets/favicon.png">
+  <meta name="description" content="NexVerse-IITM — the official tech society of IITM Janakpuri. Hackathons, workshops and tech events shaping the next generation of innovators." />
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <!-- Top ticker -->
-  <div class="ticker-bar">
+  <div class="ticker-bar" aria-hidden="true">
     <div class="ticker-track">
       <span>▶ WELCOME TO NEXVERSE-IITM • INNOVATE • CREATE • NEXCEL • THE TECH SOCIETY OF IITM JANAKPURI • NEXHACK 2.0 COMING SOON • ▶ WELCOME TO NEXVERSE-IITM • INNOVATE • CREATE • NEXCEL • THE TECH SOCIETY OF IITM JANAKPURI • NEXHACK 2.0 COMING SOON •</span>
     </div>
@@ -29,7 +30,7 @@
       <a href="team.html" class="nav-link">TEAM</a>
       <a href="events.html" class="nav-link">EVENTS</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
       <span></span><span></span><span></span>
     </button>
   </header>
@@ -76,10 +77,10 @@
 
   <!-- Stats strip -->
   <section class="stats-strip">
-    <div class="stat"><span class="stat-num pink">500+</span><span class="stat-label">HACKERS</span></div>
-    <div class="stat"><span class="stat-num cyan">36</span><span class="stat-label">HOUR HACKS</span></div>
-    <div class="stat"><span class="stat-num yellow">20+</span><span class="stat-label">MENTORS</span></div>
-    <div class="stat"><span class="stat-num green">15+</span><span class="stat-label">EVENTS</span></div>
+    <div class="stat"><span class="stat-num pink" data-count="500" data-suffix="+">500+</span><span class="stat-label">HACKERS</span></div>
+    <div class="stat"><span class="stat-num cyan" data-count="36">36</span><span class="stat-label">HOUR HACKS</span></div>
+    <div class="stat"><span class="stat-num yellow" data-count="20" data-suffix="+">20+</span><span class="stat-label">MENTORS</span></div>
+    <div class="stat"><span class="stat-num green" data-count="15" data-suffix="+">15+</span><span class="stat-label">EVENTS</span></div>
   </section>
 
   <!-- Quick About -->
@@ -97,7 +98,7 @@
   </section>
 
   <!-- Marquee -->
-  <div class="marquee">
+  <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
       <span>✦ NEXHACK 2.0 • ✦ 36 HOURS • ✦ ₹37K CASH • ✦ 500+ HACKERS • ✦ AI POWERED • ✦ NATIONAL LEVEL • ✦ NEXHACK 2.0 • ✦ 36 HOURS • ✦ ₹37K CASH • ✦ 500+ HACKERS • ✦ AI POWERED • ✦ NATIONAL LEVEL •</span>
     </div>
